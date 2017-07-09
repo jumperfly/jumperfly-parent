@@ -7,7 +7,7 @@ cache:
 branches:
   only:
   - develop
-  - master
+  - /^v\d+\.\d+\.\d+$/
 
 deploy:
   provider: script
