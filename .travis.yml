@@ -1,0 +1,12 @@
+language: java
+
+branches:
+  only:
+  - develop
+
+deploy:
+  provider: script
+  script: "mvn --setings .travis.settings.xml deploy -B"
+  skip_cleanup: true
+  on:
+    tags: true
