@@ -11,7 +11,7 @@ branches:
 
 deploy:
   provider: script
-  script: "mvn --setings .travis.settings.xml deploy -B"
+  script: "mvn --settings .travis.settings.xml deploy -B"
   skip_cleanup: true
   on:
     tags: true
